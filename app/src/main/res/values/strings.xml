@@ -13,4 +13,5 @@
     <string name="calculadadora_hint_ingrese_un_valor">Ingrese un valor</string>
     <string name="calculadora_btn_txt_calcular">Calcular</string>
     <string name="calculadora_hint_esperando_valor">Esperando valor...</string>
+    <string name="ingrese_un_numero_valido">Por favor, ingrese un número válido</string>
 </resources>
