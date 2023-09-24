@@ -22,4 +22,8 @@
         android:name="com.tecmilenio.calculadoranutricion.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_calculadora"
+        android:name="com.tecmilenio.calculadoranutricion.ui.calculadora.CalculadoraFragment"
+        android:label="@string/menu_calculadora" />
 </navigation>

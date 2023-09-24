@@ -10,6 +10,8 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_calculadora">Calculadora</string>
+
     <string name="calculadadora_hint_ingrese_un_valor">Ingrese un valor</string>
     <string name="calculadora_btn_txt_calcular">Calcular</string>
     <string name="calculadora_hint_esperando_valor">Esperando valor...</string>
