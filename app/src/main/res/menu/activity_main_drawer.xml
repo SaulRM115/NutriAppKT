@@ -8,7 +8,7 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home"
-            android:visible="false"/>
+            android:visible="true"/>
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
@@ -23,6 +23,11 @@
             android:id="@+id/nav_calculadora"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_calculadora"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_calculadora_main_container"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/ic_menu_calculadora_main_container"
             android:visible="true"/>
     </group>
 </menu>

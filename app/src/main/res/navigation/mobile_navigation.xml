@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/nav_calculadora">
+    app:startDestination="@id/nav_calculadora_main_container">
 
     <fragment
         android:id="@+id/nav_home"
@@ -26,4 +26,8 @@
         android:id="@+id/nav_calculadora"
         android:name="com.tecmilenio.calculadoranutricion.ui.calculadora.CalculadoraFragment"
         android:label="@string/menu_calculadora" />
+    <fragment
+        android:id="@+id/nav_calculadora_main_container"
+        android:name="com.tecmilenio.calculadoranutricion.ui.calculadora.CalculadoraMainFragmentContainer"
+        android:label="@string/ic_menu_calculadora_main_container" />
 </navigation>
