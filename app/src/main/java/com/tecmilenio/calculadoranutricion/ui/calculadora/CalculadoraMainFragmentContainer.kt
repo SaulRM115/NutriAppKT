@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.tabs.TabLayoutMediator
 import com.tecmilenio.calculadoranutricion.R
 import com.tecmilenio.calculadoranutricion.adaptadores.CalculadoraViewPageAdapter
 import com.tecmilenio.calculadoranutricion.databinding.FragmentCalculadoraMainContainerBinding
@@ -35,6 +36,17 @@ class CalculadoraMainFragmentContainer: Fragment() {
         val adapter = CalculadoraViewPageAdapter(childFragmentManager, lifecycle)
         val viewPager: ViewPager2 = view.findViewById(R.id.calculadora_ViewPager)
         viewPager.adapter = adapter
+
+        //TabLayout
+
+        val tabLayout = binding.calculadoraViewPagerTabLayout
+
+        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+            when (position) {
+                0 -> tab.text = "Calculadora"
+                1 -> tab.text = "Recomendaciones"
+            }
+        }.attach()
     }
 
     override fun onDestroyView() {
