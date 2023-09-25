@@ -35,9 +35,15 @@ class CalculadoraRecomendacionesFragment : Fragment() {
         // Observas los cambios en el MutableLiveData y actualizas la UI en consecuencia
         sharedViewModel.message.observe(viewLifecycleOwner, { resultadoCalculo ->
             //Aquí puedes usar resultadoCalculo para actualizar tu UI en el Fragmento B */
-
-            binding.calculadoraRecomendacionResultado.text = resultadoCalculo.toString()
+            if (resultadoCalculo < 5) {
+                binding.calculadoraRecomendacionResultado.text = "Estas en Buen peso"
+            } else if (resultadoCalculo > 6 && resultadoCalculo < 10) {
+                binding.calculadoraRecomendacionResultado.text = "Estas en Peso Medio"
+            } else if (resultadoCalculo > 10) {
+                binding.calculadoraRecomendacionResultado.text = "Tienes Sobre Peso"
+            }
         })
+
     }
 
     override fun onDestroyView() {
